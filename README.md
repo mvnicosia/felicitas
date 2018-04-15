@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a generic rails 5 project running on ruby 2.5. It has a Dockerfile so that starting the server is easy.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+Docker
 
-* System dependencies
+## Build
 
-* Configuration
+`docker build . -t felicitas`
 
-* Database creation
+## Run
 
-* Database initialization
+`docker run -it -p 3000:3000 felicitas`
 
-* How to run the test suite
+## Browse
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+GET localhost:3000
