@@ -48,6 +48,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Docker for Mac has really bad file sync'ing and Docker-sync fixes it. Read more: http://docker-sync.io/
+  gem 'docker-sync'
 end
 
 group :test do
