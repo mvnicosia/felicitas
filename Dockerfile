@@ -2,7 +2,8 @@ FROM ruby:2.5
 LABEL maintainer="mvnicosia@gmail.com"
 
 RUN apt-get update && apt-get install -y \
-    nodejs
+    nodejs \
+    postgresql
 
 ENV APP_NAME felicitas
 WORKDIR /srv/$APP_NAME
@@ -13,3 +14,7 @@ RUN bundle install
 
 EXPOSE 3000
 ENTRYPOINT ["bundle", "exec", "rails", "server"]
+
+# use the following command to work out issues with the container
+# it will keep the container up
+#CMD /bin/bash -c 'while :; echo "$APP_NAME is running"; do sleep 60; done'

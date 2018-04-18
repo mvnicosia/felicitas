@@ -1,0 +1,8 @@
+# these files will still exist in development
+# because docker-sync will mount the project dir
+Dockerfile
+docker-compose-dev.yml
+docker-compose.yml
+docker-sync.yml
+down
+up

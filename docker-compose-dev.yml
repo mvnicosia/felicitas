@@ -6,8 +6,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - felicitas-sync:/srv/felicitas/:nocopy
+      - felicitas_sync:/srv/felicitas/:nocopy
 
 volumes:
-  felicitas-sync:
+  felicitas_sync:
     external: true

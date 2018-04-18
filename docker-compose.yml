@@ -3,6 +3,25 @@ version: '2'
 
 services:
 
+  postgres_db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=setecastronomy
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   felicitas:
     build: .
     image: felicitas
+    environment:
+      - PGDB=felicitas_development
+      - PGROLES=felicitas
+      - PGHOST=postgres_db
+      - PGPORT=5432
+      - PGUSER=postgres
+      - PGPASSWORD=setecastronomy
+    depends_on:
+      - postgres_db
+
+volumes:
+  postgres_data:

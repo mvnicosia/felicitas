@@ -4,9 +4,9 @@ version: "2"
 options:
   compose-file-path: './docker-compose.yml'
   compose-dev-file-path: './docker-compose-dev.yml'
-  verbose: true  # make the whole sync verbose
+  verbose: false
 syncs:
-  felicitas-sync:
+  felicitas_sync:
     sync_strategy: native_osx
-    src: ${FELICITAS}
+    src: ${SRC}
     sync_excludes: ['.idea']
