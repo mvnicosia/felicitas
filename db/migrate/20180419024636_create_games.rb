@@ -1,7 +1,6 @@
 class CreateGames < ActiveRecord::Migration[5.2]
   def change
-    create_table :games do |t|
-      t.string :guid, primary_key: true
+    create_table :games, id: :uuid do |t|
       t.string :type
       t.boolean :joinable
 

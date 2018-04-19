@@ -15,4 +15,4 @@ fi
 
 rvm use $(cat $SRC/.ruby-version)@$(cat $SRC/.ruby-gemset)
 docker-sync start -c $SRC/docker-sync.yml
-docker-compose -f $SRC/docker-compose.yml -f $SRC/docker-compose-dev.yml up --build -d
+docker-compose -f $SRC/docker-compose.yml up --build -d
