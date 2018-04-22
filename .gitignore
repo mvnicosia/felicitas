@@ -30,3 +30,5 @@
 /config/master.key
 
 .docker-sync/*
+*.swp
+tmp

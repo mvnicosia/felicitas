@@ -1,0 +1,4 @@
+#!/bin/bash
+mkdir -p $TMP
+ln -s $TMP tmp
+bundle exec puma

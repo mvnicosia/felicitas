@@ -20,7 +20,9 @@ services:
       - PGPORT=5432
       - PGROLES=felicitas
       - PGUSER=postgres
+      - RACK_ENV=development
       - RAILS_ENV=development
+      - TMP=/tmp/felicitas
     depends_on:
       - postgres_db
     ports:

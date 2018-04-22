@@ -13,7 +13,7 @@ RUN gem install bundler
 RUN bundle install
 
 EXPOSE 3000
-ENTRYPOINT ["bundle", "exec", "rails", "server"]
+ENTRYPOINT ["bin/run"]
 
 # use the following command to work out issues with the container
 # it will keep the container up
