@@ -12,7 +12,6 @@ This is a generic rails 5 project running on ruby 2.5. It has a Dockerfile so th
 
 1. `git clone git@github.com:mvnicosia/felicitas.git`
 1. `cd felicitas`
-1. `export RAILS_ENV=development` (put this in your .bash\_profile)
 1. `gem install bundler`
 1. `bundle install`
 1. `./up`
